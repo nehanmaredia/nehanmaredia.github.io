@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Grade Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 font-sans text-gray-900 dark:text-gray-100">
+  <div class="max-w-xl mx-auto p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg mt-10">
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-bold">Final Grade Calculator</h1>
+      <button id="themeToggle" class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded">
+        Toggle Dark Mode
+      </button>
+    </div>
+    <form id="gradeForm" class="space-y-4">
+      <div>
+        <label for="courseName" class="block">Course Name:</label>
+        <input type="text" id="courseName" class="w-full border border-gray-300 dark:border-gray-600 rounded px-3 py-2 bg-gray-50 dark:bg-gray-700" placeholder="e.g., Math">
+      </div>
+      <div>
+        <label for="mp1" class="block">MP1 Score:</label>
+        <input type="number" id="mp1" class="w-full border border-gray-300 dark:border-gray-600 rounded px-3 py-2 bg-gray-50 dark:bg-gray-700" placeholder="Enter MP1 score">
+      </div>
+      <div>
+        <label for="mp2" class="block">MP2 Score:</label>
+        <input type="number" id="mp2" class="w-full border border-gray-300 dark:border-gray-600 rounded px-3 py-2 bg-gray-50 dark:bg-gray-700" placeholder="Enter MP2 score">
+      </div>
+      <div>
+        <label for="finalExam" class="block">Final Exam Score:</label>
+        <input type="number" id="finalExam" class="w-full border border-gray-300 dark:border-gray-600 rounded px-3 py-2 bg-gray-50 dark:bg-gray-700" placeholder="Enter Final Exam score">
+      </div>
+      <button type="button" id="calculateButton" class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600">Calculate</button>
+    </form>
+    <div id="result" class="mt-4 text-center text-lg font-medium"></div>
+  </div>
+  <footer class="max-w-xl mx-auto mt-6 text-center text-gray-600 dark:text-gray-400">
+    <p class="flex justify-center items-center space-x-4">
+      <span>© 2024 Nehan Maredia.</span>
+      <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="flex items-center">
+        <img src="TAILWIND.png" alt="Tailwind CSS Logo" class="h-5 w-8">
+      </a>
+      <a href="https://github.com/nehanmaredia" target="_blank" rel="noopener noreferrer" class="flex items-center">
+        <img src="GithubNew.png" alt="GitHub Logo" class="h-6 w-6">  <!-- Increased size here -->
+      </a>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
